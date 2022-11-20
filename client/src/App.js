@@ -1,11 +1,11 @@
-import { Days, Hours } from './container';
+import { DaysContainer, HoursContainer } from './container';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Days/>
-      <Hours/>
+      <DaysContainer/>
+      <HoursContainer/>
     </div>
   );
 }
