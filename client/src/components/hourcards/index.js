@@ -1,0 +1,1 @@
+export {default as InfoHours} from './info/infoHours';
