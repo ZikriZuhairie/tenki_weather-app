@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
   --font-family: 'Quicksand', sans-serif;
-  
+  --font-family-location: 'Jost', sans-serif;
   --color-bg: #9ABED9;
   --color-text: #ffff;
   --color-daycards-active: #4F7BA0;

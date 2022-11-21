@@ -1,7 +1,10 @@
-const location = () => {
+import React from 'react';
+import './location.css';
+
+const location = ({location}) => {
     return ( 
-        <div>
-            <h1>Location Sections</h1>
+        <div className="weather__location-text">
+            <h1>{location}</h1>
         </div>
      );
 }

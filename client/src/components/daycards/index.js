@@ -1,0 +1,1 @@
+export {default as InfoDays} from './info/infodays';

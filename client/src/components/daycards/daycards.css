@@ -1,0 +1,52 @@
+.weather__daycards {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather__daycards-container {
+  height: 177px;
+  width: 177px;
+  margin: 10px;
+
+  background: var(--color-daycards-normal);
+
+  border: 1px solid #cac4d0;
+  border-radius: 12px;
+}
+
+.weather__daycards-container_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.weather__daycards-container_text p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 22px;
+}
+
+.weather__daycards-info {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: -10px;
+}
+
+.weather__daycards-info img {
+  width: 42%;
+  height: 42%;
+}
+
+.weather__daycards-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5px;
+}

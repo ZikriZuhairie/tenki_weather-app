@@ -1,11 +1,12 @@
 .weather__days {
     display: flex;
+    flex-direction:column;
 }
 
 .weather__days-container {
-    flex: 1;
     display: flex;
+    flex: 1;
+    flex-direction:row;
     justify-content:center;
     align-items:center;
-    flex-direction:row;
 }

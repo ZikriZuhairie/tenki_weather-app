@@ -1,4 +1,4 @@
-export {defaults as DayCards} from './daycards/dayCards';
-export {defaults as HourCards} from './hourcards/hourCards';
-export {defaults as Location} from './location/location';
-export {defaults as SearchBar} from './searchbar/searchBar';
+export {default as DayCards} from './daycards/dayCards';
+export {default as HourCards} from './hourcards/hourCards';
+export {default as Location} from './location/location';
+export {default as SearchBar} from './searchbar/searchBar';
