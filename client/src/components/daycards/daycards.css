@@ -10,11 +10,28 @@
   height: 177px;
   width: 177px;
   margin: 10px;
+  padding-right: 0px;
 
   background: var(--color-daycards-normal);
 
   border: 1px solid #cac4d0;
   border-radius: 12px;
+  cursor: pointer;
+  transition: padding-right 600ms cubic-bezier(.05,.43,.25,.95);
+}
+
+.weather__daycards-container.active {
+  height: 177px;
+  width: 177px;
+  margin: 10px;
+  padding-right: 120px;
+
+  background: var(--color-daycards-active);
+
+  border: 1px solid #cac4d0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: padding-right 600ms cubic-bezier(.05,.43,.25,.95);
 }
 
 .weather__daycards-container_text {

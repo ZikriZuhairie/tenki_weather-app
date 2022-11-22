@@ -1,12 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
 import { InfoDays } from './index';
 import './daycards.css';
 import cloudy from '../../assets/cloudy.png';
 
-const dayCards = ({date, temp1, temp2}) => {
+const DayCards = ({date, temp1, temp2}) => {
+
+    const [cardState, setCardState] = useState(false);
+
+    function handleClick(){
+        setCardState(cardState => !cardState);
+    }
+
+    let toggleClassCheck = cardState ? ' active' : '';
+
     return (
         <div className="weather__daycards">
-            <div className="weather__daycards-container">
+            <div className={`weather__daycards-container${toggleClassCheck}`} onClick={handleClick}>
                 <div className="weather__daycards-container_text">
                     <p>{date}</p>
                 </div>
@@ -21,4 +31,4 @@ const dayCards = ({date, temp1, temp2}) => {
     );
 }
 
-export default dayCards;
+export default DayCards;
