@@ -1,0 +1,19 @@
+.weather__infohours{
+    display: flex;
+}
+
+.weather__infohours-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather__infohours-text{
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 17px;
+    padding-left: 20px;
+}
+

@@ -1,8 +1,9 @@
 import React from 'react';
 import { InfoHours } from './index';
-import '.././daycards/daycards.css'; 
+import './hourcards.css'; 
 import cloudy from '../../assets/cloudy.png';
-import {BiDroplet} from 'react-icons';
+
+
 
  //adding on space
 const divStyle = {
@@ -12,17 +13,17 @@ const divStyle = {
 
 const HourCards = ({ temp, feels_like, windspeed,humidity}) => {
     return (
-        <div className="weather__daycards">
-            <div className="weather__daycards-container">
-                    <div className="weather__daycards-info">
-                    <img style={divStyle} src={cloudy} alt="cloudy icon" />
-                    
-                         <div className="weather__daycards-info-text">
-                         <li><InfoHours temp1={temp} feels_like1={feels_like} windspeed1={windspeed} humidity1={humidity}/></li>
-                         </div>
-                    </div>
+        <div className="weather_hourcards">
+        <div className="weather__hourcards-container">
+
+            <div className="weather__hourcards-info">
+                <img style={divStyle} src={cloudy} alt="cloudy icon" />
+                <div className="weather__hourcards-info-text">
+                    <InfoHours temp1={temp} feels_like1={feels_like} windspeed1={windspeed} humidity1={humidity}/>
+                </div>
             </div>
-        </div >
+        </div>
+    </div >
     );
 }
 
