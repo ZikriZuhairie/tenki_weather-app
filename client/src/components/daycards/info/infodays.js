@@ -8,8 +8,8 @@ const infodays = ({ temp_high, temp_low }) => {
                 <div className="weather__infodays-text">
 
 
-                    <p>{temp_high}</p>
-                    <p>{temp_low}</p>
+                    <p>{temp_high}&deg;C</p>
+                    <p>{temp_low}&deg;C</p>
 
                 </div>
             </div>

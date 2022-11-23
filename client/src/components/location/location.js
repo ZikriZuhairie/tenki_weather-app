@@ -4,7 +4,7 @@ import './location.css';
 const location = ({location}) => {
     return ( 
         <div className="weather__location-text">
-            <h1>{location}</h1>
+            <h1>{location.city_name}</h1>
         </div>
      );
 }
