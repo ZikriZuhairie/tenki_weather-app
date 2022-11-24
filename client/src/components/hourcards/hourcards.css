@@ -1,86 +1,87 @@
 .weather__hourcards {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    width: 137px;
-    height: 171px;
-    left: 0px;
-    top: 0px;
+  width: 137px;
+  height: 171px;
+  left: 0px;
+  top: 0px;
 
-        
-  }
+      
+}
+
+.weather__hourcards-container {
+
+  box-sizing: border-box;
+
+  left: 7.05%;
+  right: 8.16%;
+  top: 47.03%;
+  bottom: 18.65%;
   
-  .weather__hourcards-container {
+  background: #4F7AA0;
 
-    box-sizing: border-box;
+}
 
-    left: 7.05%;
-    right: 8.16%;
-    top: 47.03%;
-    bottom: 18.65%;
-    
-    background: #4F7AA0;
-  
-  }
-  
-  .weather__hourcards-container_text {
-  
-    box-sizing: border-box;
+.weather__hourcards-container_text {
 
-    /* M3/sys/light/outline-variant */
+  box-sizing: border-box;
 
-    border: 1px solid #CAC4D0;
-    border-radius: 12px;
+  /* M3/sys/light/outline-variant */
 
-    /* Inside auto layout */
+  border: 1px solid #CAC4D0;
+  border-radius: 12px;
 
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1;
-    z-index: 1;
+  /* Inside auto layout */
 
-  }
-  .weather__hourcards-container_text p {
-    color: var(--color-text);
-    font-family: var(--font-family);
-    font-size: 22px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  z-index: 1;
 
-      }
-  
-  /* JANGAN KACAU */
-  .weather__hourcards-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px;
-    isolation: isolate;
+}
+.weather__hourcards-container_text p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 22px;
 
-    margin: 15px;
-    margin-bottom: 0;
+    }
 
-    left: 0px;
-    top: 0px;
+/* JANGAN KACAU */
+.weather__hourcards-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  isolation: isolate;
 
-    border-radius: 12px;
-    border: 1px solid #CAC4D0;
-    background-color:#26547C;
-  }
-  
-  .weather__hourcards-info img {
-    width: 62%;
-    margin: 10px 14px 0px 33px;
-  }
-  
-  .weather__hourcards-info-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-right: 7px;
-  }
+  margin: 15px;
+  margin-bottom: 0;
 
-  
+  left: 0px;
+  top: 0px;
+
+  border-radius: 12px;
+  border: 1px solid #CAC4D0;
+  background-color:#26547C;
+}
+
+.weather__hourcards-info img {
+  width: 62%;
+  margin: 10px 14px 0px 33px;
+}
+
+.weather__hourcards-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 17px;
+  padding-left: 10px;
+}
+
+

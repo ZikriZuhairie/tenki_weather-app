@@ -1,9 +1,41 @@
 import React from 'react';
 import { HourCards} from '../../components';
 import '../hours/hours.css';
+import { useEffect, useState } from "react";
+
+
 
 
 const hoursContainer = () => {
+
+    // REACT_APP_API_URL = 'https://api.openweathermap.org/data/2.5'
+    // REACT_APP_API_KEY =  '5fc8377d78454f8c85519c6b179a755e'
+
+    // REACT_APP_ICON_URL = 'https://openweathermap.org/img/w'
+
+    // const [lat, setLat] = useState([]);
+    // const [long, setLong] = useState([]);
+
+    // useEffect(() => {
+    //     navigator.geolocation.getCurrentPosition(function(position) {
+    //       setLat(position.coords.latitude);
+    //       setLong(position.coords.longitude);
+    //     });
+    
+    //     console.log("Latitude is:", lat)
+    //     console.log("Longitude is:", long)
+
+    //     await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
+    //     .then(res => res.json())
+    //     .then(result => {
+    //       setData(result)
+    //       console.log(result);
+    //     });
+    //   fetchData();
+
+    //   }, [lat, long]);
+      
+
     return (
     
         <div className="weather__hours">
