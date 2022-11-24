@@ -18,3 +18,8 @@
 }
 
 
+.weather__infohours-text p{
+    
+text-transform: capitalize;
+
+}

@@ -4,7 +4,7 @@ import './hourcards.css';
 import cloudy from '../../assets/cloudy.png';
 
 
-const HourCards = ({ temp, feels_like, windspeed,humidity}) => {
+const HourCards = ({ feels_like, desc,windspeed,humidity}) => {
     return (
         <div className="weather_hourcards">
         <div className="weather__hourcards-container">
@@ -12,7 +12,7 @@ const HourCards = ({ temp, feels_like, windspeed,humidity}) => {
             <div className="weather__hourcards-info">
                 <img src={cloudy} alt="cloudy icon" />
                 <div className="weather__hourcards-info-text">
-                    <InfoHours temp1={temp} feels_like1={feels_like} windspeed1={windspeed} humidity1={humidity}/>
+                    <InfoHours feels_like1={feels_like} desc1={desc} windspeed1={windspeed} humidity1={humidity}/>
                 </div>
             </div>
         </div>
