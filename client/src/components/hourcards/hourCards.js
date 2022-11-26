@@ -1,16 +1,16 @@
 import React from 'react';
 import { InfoHours } from './index';
 import './hourcards.css'; 
-import cloudy from '../../assets/cloudy.png';
+import '../hourcards/info/infohours.css';
 
 
-const HourCards = ({ feels_like, desc,windspeed,humidity}) => {
+const HourCards = ({ icons,feels_like, desc,windspeed,humidity}) => {
     return (
         <div className="weather_hourcards">
         <div className="weather__hourcards-container">
 
             <div className="weather__hourcards-info">
-                <img src={cloudy} alt="cloudy icon" />
+                <img src={`http://openweathermap.org/img/wn/${icons}.png`} alt="icon" />
                 <div className="weather__hourcards-info-text">
                     <InfoHours feels_like1={feels_like} desc1={desc} windspeed1={windspeed} humidity1={humidity}/>
                 </div>
