@@ -9,8 +9,6 @@
   height: 171px;
   left: 0px;
   top: 0px;
-
-      
 }
 
 .weather__hourcards-container {
@@ -39,7 +37,7 @@
 
   flex: none;
   order: 1;
-  align-self: stretch;
+  /* align-self: stretch; */
   flex-grow: 1;
   z-index: 1;
 

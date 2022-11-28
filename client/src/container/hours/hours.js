@@ -3,6 +3,12 @@ import { HourCards} from '../../components';
 import '../hours/hours.css';
 import { useEffect, useState } from "react";
 
+function formatTime(timeString) {
+    const [hourString, minute] = timeString.split(":");
+    const hour = +hourString % 24;
+    return (hour % 12 || 12) + ":" + minute + (hour < 12 ? "AM" : "PM");
+}
+
 
 const HoursContainer = () => {
 
@@ -11,6 +17,9 @@ const HoursContainer = () => {
     const [forecast, setForecast] = useState([]);
     const API_URL = "https://api.openweathermap.org/data/2.5";
     const API_KEY = "42483dcbcab8f3a79b404e14daea543e";
+
+        
+  
 
     useEffect(() => {
         const getLocation = () => {
@@ -36,6 +45,7 @@ const HoursContainer = () => {
 
     return (
     
+        
         <div className="weather__hours">
             <div className="weather__hours-container">
 
@@ -83,15 +93,35 @@ const HoursContainer = () => {
 
                 </div>
             <div className="box_under">
-                <div className="text_undercontainer">
-                    
-                9 AM</div>
 
-                <div className="text_undercontainer">10 AM</div>
-                <div className="text_undercontainer">11 AM</div>
-                <div className="text_undercontainer">12 PM</div>
-                <div className="text_undercontainer">1 PM</div>
-                <div className="text_undercontainer">2 PM</div>
+
+                <div className="text_undercontainer">
+              
+                 {formatTime( forecast.list[0].dt_txt.slice(11, 19)) }
+                </div>
+    
+
+                <div className="text_undercontainer">
+                {formatTime( forecast.list[1].dt_txt.slice(11, 19)) }
+
+                </div>
+
+                <div className="text_undercontainer">
+                {formatTime( forecast.list[2].dt_txt.slice(11, 19)) }
+
+                </div>
+                <div className="text_undercontainer">
+                {formatTime( forecast.list[3].dt_txt.slice(11, 19)) }
+
+                </div>
+                <div className="text_undercontainer">
+                {formatTime( forecast.list[4].dt_txt.slice(11, 19)) }
+
+                </div>
+                <div className="text_undercontainer">
+                {formatTime( forecast.list[5].dt_txt.slice(11, 19)) }
+
+                </div>
             </div>
         </div>
     );

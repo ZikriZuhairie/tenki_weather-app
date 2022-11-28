@@ -34,14 +34,11 @@
     color: var(--color-text);
     font-family: var(--font-family);
     font-size: 18px;
-
-    padding-left: 69px;
     isolation: isolate;
-
-    align-self: stretch;
+    padding-left: 69px;
     flex-grow: 1;
     z-index: 1;
-    margin-left: 5;
+    width: 110px;
   }
 
 
