@@ -26,6 +26,9 @@
     justify-content: center;
     align-items: center;
     flex-direction:row;
+    margin-top: -9px;
+    margin-bottom: 8px;
+    padding-left: 10px;
 }
 
 

@@ -47,7 +47,6 @@
 
   border: 1px solid #cac4d0;
   border-radius: 12px;
-  cursor: pointer;
   transition: padding-right 600ms cubic-bezier(.05,.43,.25,.95);
 }
 
@@ -63,7 +62,6 @@
 
   border: 1px solid #cac4d0;
   border-radius: 12px;
-  cursor: pointer;
   transition: padding-right 600ms cubic-bezier(.05,.43,.25,.95);
 }
 
