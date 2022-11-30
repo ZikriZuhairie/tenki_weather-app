@@ -11,17 +11,17 @@ const DaysContainer = () => {
     const [long, setLong] = useState([]);
     const [forecast, setForecast] = useState([]);
     const API_URL1 = "https://api.weatherbit.io/v2.0/forecast";
-    const API_KEY1 = "5fc8377d78454f8c85519c6b179a755e";
-
+    
     useEffect(() => {
         const getLocation = () => {
             navigator.geolocation.getCurrentPosition(function (position) {
                 setLat(position.coords.latitude);
                 setLong(position.coords.longitude);
-
+                
             });
-            };
+        };
         const fetchData = async () => {
+            const API_KEY1 = process.env.REACT_APP_API_KEY_WEATHERBIT;
             getLocation();
             await fetch(`${API_URL1}/daily?lat=${lat}&lon=${long}&key=${API_KEY1}`)
                 .then(response => response.json())

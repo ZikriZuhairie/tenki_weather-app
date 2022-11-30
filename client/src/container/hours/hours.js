@@ -16,20 +16,20 @@ const HoursContainer = () => {
     const [long, setLong] = useState([]);
     const [forecast, setForecast] = useState([]);
     const API_URL = "https://api.openweathermap.org/data/2.5";
-    const API_KEY = "42483dcbcab8f3a79b404e14daea543e";
-
-
-
-
+    
+    
+    
+    
     useEffect(() => {
         const getLocation = () => {
             navigator.geolocation.getCurrentPosition(function (position) {
                 setLat(position.coords.latitude);
                 setLong(position.coords.longitude);
-
+                
             });
         };
         const fetchData = async () => {
+            const API_KEY = process.env.REACT_APP_API_KEY_OPENWEATHERMAP;
             getLocation();
 
             await fetch(`${API_URL}/forecast?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`)
