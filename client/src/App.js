@@ -8,8 +8,8 @@ function App() {
       <div className="weather__position-container">
         <DaysContainer />
         <HoursContainer />
-        <Footer />
       </div>
+        <Footer />
     </div>
   );
 }

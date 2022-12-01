@@ -116,3 +116,64 @@
   padding-left: 5px;
 }
 
+/* Small Screen; Eg: Laptop */
+
+@media screen and (max-width: 1024px){
+  .weather__daycards{
+    display: flex;
+    flex-direction: column;
+  }
+  .weather__daycards-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 180px;
+  }
+  .weather__daycards-container.active{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 180px;
+  }
+}
+
+/* Ipads Tablets */
+
+@media screen and (max-width: 769px){
+  .weather__daycards{
+    display: flex;
+    flex-direction: row;
+  }
+  .weather__daycards-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 180px;
+  }
+  .weather__daycards-container.active{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 481px){
+  .weather__daycards-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 150px;
+    width: 220px;
+  }
+  .weather__daycards-container.active{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 150px;
+    width: 220px;
+  }
+  .weather__daycards-container_text{
+    margin-top: 0px;
+  }
+}

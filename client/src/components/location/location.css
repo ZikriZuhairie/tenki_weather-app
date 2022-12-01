@@ -1,12 +1,24 @@
 .weather__location-text {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: -45px;
-    margin-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: -45px;
+  margin-left: 10px;
+}
+.weather__location-text h1 {
+  color: var(--color-text);
+  font-family: var(--font-family-location);
+  font-size: 55px;
+}
+
+@media screen and (max-width: 1024px) {
+  .weather__location-text {
+    margin-left: 0px;
   }
-  .weather__location-text h1 {
-    color: var(--color-text);
-    font-family: var(--font-family-location);
-    font-size: 55px;
+}
+
+@media screen and (max-width: 769px) {
+  .weather__location-text {
+    width: 10px;
   }
+}

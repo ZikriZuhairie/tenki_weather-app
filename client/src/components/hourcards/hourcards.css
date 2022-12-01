@@ -12,25 +12,22 @@
 }
 
 .weather__hourcards-container {
-
   box-sizing: border-box;
 
   left: 7.05%;
   right: 8.16%;
   top: 47.03%;
   bottom: 18.65%;
-  
-  background: #4F7AA0;
 
+  background: #4f7aa0;
 }
 
 .weather__hourcards-container_text {
-
   box-sizing: border-box;
 
   /* M3/sys/light/outline-variant */
 
-  border: 1px solid #CAC4D0;
+  border: 1px solid #cac4d0;
   border-radius: 12px;
 
   /* Inside auto layout */
@@ -40,14 +37,12 @@
   /* align-self: stretch; */
   flex-grow: 1;
   z-index: 1;
-
 }
 .weather__hourcards-container_text p {
   color: var(--color-text);
   font-family: var(--font-family);
   font-size: 22px;
-
-    }
+}
 
 /* JANGAN KACAU */
 .weather__hourcards-info {
@@ -64,8 +59,8 @@
   top: 0px;
 
   border-radius: 12px;
-  border: 1px solid #CAC4D0;
-  background-color:#26547C;
+  border: 1px solid #cac4d0;
+  background-color: #26547c;
 }
 
 .weather__hourcards-info img {
@@ -82,4 +77,31 @@
   padding-left: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .weather__hourcards-info img{
+    margin-left: 20px;
+    margin-bottom: -15px;
+  }
+  .weather__hourcards-info {
+    width: 100px;
+    margin: 7px;
+  }
+  .weather__hourcards-info-text{
+    padding: 0px;
+  }
+}
 
+@media screen and (max-width: 769px) {
+  .weather__hourcards-info img{
+    width: 60px;
+    margin-top: -10px;
+  }
+  .weather__hourcards-info {
+    width: 240px;
+    height: 90px;
+    margin: 7px;
+  }
+  .weather__hourcards-info-text{
+    padding-left: 40px;
+  }
+}
